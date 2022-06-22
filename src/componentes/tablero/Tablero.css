@@ -1,0 +1,92 @@
+.carta1 {
+  border: 2px solid rgb(35, 240, 69);
+  border-radius: 200px;
+  width: 5vw;
+}
+
+.carta {
+  border: solid 1px;
+  border-radius: 20px;
+  width: 100%;
+  font-size: 1rem;
+}
+.p {
+  height: 30%;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: red;
+  text-transform: uppercase;
+
+  animation-name: parpadeo;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-timing-function: liniear;
+  -webkit-animation-iteration-count: infinite;
+}
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 3;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 3;
+  }
+}
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 3;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 3;
+  }
+}
+@keyframes parpadeo {
+  0% {
+    opacity: 3;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 3;
+  }
+}
+
+.rojo {
+  background-color: red;
+}
+
+.azul {
+  background-color: blue;
+}
+
+.amarillo {
+  background-color: yellow;
+  color: black;
+}
+
+.verde {
+  background-color: green;
+}
+
+.naranja {
+  background-color: orangered;
+}
+
+.violeta {
+  background-color: violet;
+}
+
+.negro {
+  background-color: black;
+}

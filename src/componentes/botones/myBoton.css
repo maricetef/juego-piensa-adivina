@@ -1,81 +1,70 @@
 .btnDerecha {
-   
-   width: 100%;
-   height: 20%;
-   border: none;
-   color: white;
-   border-radius: 15px;
-   text-align: center;
-   font-size: 0.9rem;
-   transition: all 0.5s;
-   cursor: pointer;
-   margin: 10px;
-  
+  width: 100%;
+  height: 20%;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
 }
-
 
 .rojo {
-   background-color: red;
+  background-color: red;
 }
-
 
 .azul {
-   background-color: blue;
+  background-color: blue;
 }
 
-
 .amarillo {
-   background-color: yellow;
-   color: black;
+  background-color: yellow;
+  color: black;
 }
 
 .verde {
-   background-color: green;
+  background-color: green;
 }
-
 
 .naranja {
-   background-color: orangered;
+  background-color: orangered;
 }
-
 
 .violeta {
-   background-color: violet;
+  background-color: violet;
 }
 
-.negro{
-   background-color:  black;
-   color: whitesmoke;
-  
- }
+.negro {
+  background-color: black;
+  color: whitesmoke;
+}
 
- .btnNormal{
-   width: 8ch;
-   height: 3ch;
-   border: transparent;
-   margin: 3% 2%;
-   border-radius: 8px;
-   text-align: center;
-   color: blanchedalmond;
-   font-size: 0.7rem;
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   background-color:rgb(34, 33, 33);
-   transition: background-color,font-size  0.5s ;
-   cursor: pointer;
-   
-   
+.btnNormal {
+  width: 8ch;
+  height: 3ch;
+  border: transparent;
+  margin: 3% 2%;
+  border-radius: 8px;
+  text-align: center;
+  color: blanchedalmond;
+  font-size: 0.7rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(34, 33, 33);
+  transition: background-color, font-size 0.5s;
+  cursor: pointer;
 }
 .btnNormal:hover {
-  background-color:rgba(66, 252, 91, 0.76);
+  background-color: rgba(66, 252, 91, 0.76);
   font-size: 1.1rem;
 }
 
 .btnAyuda {
-   width: 6ch;
-   height: 3ch;
-   border-radius: 35px;
-   border: transparent;
-   background-color: brown;
-   margin: 10% 5%;
+  width: 6ch;
+  height: 3ch;
+  border-radius: 35px;
+  border: transparent;
+  background-color: brown;
+  margin: 10% 5%;
 }
-

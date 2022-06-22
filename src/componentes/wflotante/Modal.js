@@ -1,9 +1,9 @@
 import "./Modal.css";
 
 
-export default function Modal({ children, isOpen=false, closeModal}) {
-    
-   
+export default function Modal({ children, isOpen = false, closeModal }) {
+
+
     return (
         <article className={`modal ${isOpen && "is-open"}`}>
             <div className='modal-container'>

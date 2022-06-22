@@ -1,11 +1,11 @@
-.modal-h3{
+.modal-h3 {
   font-size: 30px;
 }
 
-.modal-p{
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   font-style: italic;
-   text-justify: auto;
-   font-size: 20px;
-   color: black;
+.modal-p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-justify: auto;
+  font-size: 20px;
+  color: black;
 }

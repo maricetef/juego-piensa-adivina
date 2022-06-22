@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import "./cuadroColor.css";
+import "./Tablero.css";
 
-export default function Tablero({ cantDibujado, cancelar, fila, arrayFilaColores,coloresAdivinar, resultRevision, revisado }) {
+export default function Tablero({ cantDibujado, cancelar, fila, arrayFilaColores, coloresAdivinar, resultRevision, revisado }) {
   //Variables para obtener la referencia de cada DIV
   let refDiv1 = useRef();
   let refDiv2 = useRef();
@@ -65,7 +65,7 @@ export default function Tablero({ cantDibujado, cancelar, fila, arrayFilaColores
 
   //Para mostrar el resultado de la revision en la fila que corresponda
   if (revisado) {
-    if (resultRevision=== "Ganador" || resultRevision=== "Perdedor" ) {
+    if (resultRevision === "Ganador" || resultRevision === "Perdedor") {
       refDivCA5.current.className = "carta1 " + coloresAdivinar[0].toLowerCase();
       refDivCA5.current.textContent = "R";
       refDivCA4.current.className = "carta1 " + coloresAdivinar[1].toLowerCase();
@@ -76,27 +76,27 @@ export default function Tablero({ cantDibujado, cancelar, fila, arrayFilaColores
       refDivCA2.current.textContent = "A";
       refDivCA1.current.className = "carta1 " + coloresAdivinar[4].toLowerCase();
       refDivCA1.current.textContent = "G";
-    } 
-      if (fila === 1) {
-        refP1.current.textContent = resultRevision;
-      } else if (fila === 2) {
-        refP2.current.textContent = resultRevision;
-      } else if (fila === 3) {
-        refP3.current.textContent = resultRevision;
-      } else if (fila === 4) {
-        refP4.current.textContent = resultRevision;
-      } else if (fila === 5) {
-        refP5.current.textContent = resultRevision;
-      } else if (fila === 6) {
-        refP6.current.textContent = resultRevision;
-      } else if (fila === 7) {
-        refP7.current.textContent = resultRevision;
-      } else if (fila === 8) {
-        refP8.current.textContent = resultRevision;
-      } else if (fila === 9) {
-        refP9.current.textContent = resultRevision;
-      }
-    
+    }
+    if (fila === 1) {
+      refP1.current.textContent = resultRevision;
+    } else if (fila === 2) {
+      refP2.current.textContent = resultRevision;
+    } else if (fila === 3) {
+      refP3.current.textContent = resultRevision;
+    } else if (fila === 4) {
+      refP4.current.textContent = resultRevision;
+    } else if (fila === 5) {
+      refP5.current.textContent = resultRevision;
+    } else if (fila === 6) {
+      refP6.current.textContent = resultRevision;
+    } else if (fila === 7) {
+      refP7.current.textContent = resultRevision;
+    } else if (fila === 8) {
+      refP8.current.textContent = resultRevision;
+    } else if (fila === 9) {
+      refP9.current.textContent = resultRevision;
+    }
+
     //refDivCA1.current.className = "carta " + coloresAdivinar[0].toLowerCase();
     // refDivCA2.current.className = "carta " + coloresAdivinar[1].toLowerCase();
     //refDivCA3.current.className = "carta " + coloresAdivinar[2].toLowerCase();
@@ -663,7 +663,7 @@ export default function Tablero({ cantDibujado, cancelar, fila, arrayFilaColores
 
   }
 
-  
+
 
   return (
 
@@ -674,55 +674,55 @@ export default function Tablero({ cantDibujado, cancelar, fila, arrayFilaColores
       <div ref={refDivCA3} className="carta1">?</div>
       <div ref={refDivCA4} className="carta1">? </div>
       <div ref={refDivCA5} className="carta1">? </div>
-      <p className='p'  ref={refP9}></p>
+      <p className='p' ref={refP9}></p>
       <div ref={refDiv45} className="carta ">P</div>
       <div ref={refDiv44} className="carta "></div>
       <div ref={refDiv43} className="carta "></div>
       <div ref={refDiv42} className="carta "></div>
       <div ref={refDiv41} className="carta "></div>
-      <p className='p'  ref={refP8}></p>
+      <p className='p' ref={refP8}></p>
       <div ref={refDiv40} className="carta "></div>
       <div ref={refDiv39} className="carta ">I</div>
       <div ref={refDiv38} className="carta "></div>
       <div ref={refDiv37} className="carta "></div>
       <div ref={refDiv36} className="carta "></div>
-      <p className='p'  ref={refP7}></p>
+      <p className='p' ref={refP7}></p>
       <div ref={refDiv35} className="carta "></div>
       <div ref={refDiv34} className="carta "></div>
       <div ref={refDiv33} className="carta ">E</div>
       <div ref={refDiv32} className="carta "></div>
       <div ref={refDiv31} className="carta "></div>
-      <p className='p'  ref={refP6}></p>
+      <p className='p' ref={refP6}></p>
       <div ref={refDiv30} className="carta "></div>
       <div ref={refDiv29} className="carta "></div>
       <div ref={refDiv28} className="carta "></div>
       <div ref={refDiv27} className="carta ">N</div>
       <div ref={refDiv26} className="carta "></div>
-      <p className='p'  ref={refP5}></p>
+      <p className='p' ref={refP5}></p>
       <div ref={refDiv25} className="carta "></div>
       <div ref={refDiv24} className="carta "></div>
       <div ref={refDiv23} className="carta "></div>
       <div ref={refDiv22} className="carta "></div>
       <div ref={refDiv21} className="carta ">S</div>
-      <p className='p'  ref={refP4}></p>
+      <p className='p' ref={refP4}></p>
       <div ref={refDiv20} className="carta "></div>
       <div ref={refDiv19} className="carta "></div>
       <div ref={refDiv18} className="carta "></div>
       <div ref={refDiv17} className="carta ">A</div>
       <div ref={refDiv16} className="carta "></div>
-      <p className='p'  ref={refP3}></p>
+      <p className='p' ref={refP3}></p>
       <div ref={refDiv15} className="carta "></div>
       <div ref={refDiv14} className="carta "></div>
       <div ref={refDiv13} className="carta ">D</div>
       <div ref={refDiv12} className="carta "></div>
       <div ref={refDiv11} className="carta "></div>
-      <p className='p'  ref={refP2}></p>
+      <p className='p' ref={refP2}></p>
       <div ref={refDiv10} className="carta "></div>
       <div ref={refDiv9} className="carta ">I</div>
       <div ref={refDiv8} className="carta "></div>
       <div ref={refDiv7} className="carta "></div>
       <div ref={refDiv6} className="carta "></div>
-      <p className='p'  ref={refP1}></p>
+      <p className='p' ref={refP1}></p>
       <div ref={refDiv5} className="carta ">V</div>
       <div ref={refDiv4} className="carta "></div>
       <div ref={refDiv3} className="carta "></div>

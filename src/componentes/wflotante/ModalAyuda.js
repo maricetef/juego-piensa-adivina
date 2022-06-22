@@ -4,7 +4,7 @@ import "./ModalAyuda.css"
 
 
 const ModalAyuda = ({ isOpen, closeModal }) => {
-    
+
     return (
         <div>
             <Modal isOpen={isOpen} closeModal={closeModal}>
